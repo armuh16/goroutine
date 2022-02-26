@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+//kondisi default pada sebuah select akan dieksekusi ketika tidak ada kondisi lain yang terpenuhi
+
 func main() {
 	tick := time.Tick(100 * time.Millisecond)
 	boom := time.After(500 * time.Millisecond)
