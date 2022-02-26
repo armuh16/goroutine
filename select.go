@@ -14,6 +14,9 @@ import (
 // 	}
 // }
 
+// select membiarkan sebuah goroutine menunggu untuk beberapa operasi komunikasi
+// select terkunci hingga salah satu kondisi secara random
+
 func main() {
 	c := make(chan int)
 
