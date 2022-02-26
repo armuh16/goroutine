@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// Channel sebuah kanal yang digunakan oleh konkuren goroutine untuk berkomunikasi
+// goroutine A -> channel -> B
+
 func sum(s []int, c chan int) {
 	sum := 0
 	for _, v := range s {
