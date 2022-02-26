@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+// channel dapat memilih buffer.
+// - pengiriman data terkunci ketika channel penuh
+// - penerimaan data terkunci ketika channel kosong
+
 func main() {
 	c := make(chan bool, 5)
 	c <- true
